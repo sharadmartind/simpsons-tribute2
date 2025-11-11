@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Simpsons Family</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Define a bright Simpsons yellow for primary elements */
+            --simpsons-yellow: #FDE047;
+            /* A contrasting dark blue for text and accents */
+            --simpsons-blue: #1E40AF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .header-bg {
+            background-color: var(--simpsons-blue);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .family-card {
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 6px solid var(--simpsons-yellow);
+        }
+        .family-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .yellow-accent {
+            background-color: var(--simpsons-yellow);
+            color: var(--simpsons-blue);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Section -->
+    <header class="header-bg py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-extrabold text-white tracking-tight sm:text-6xl">
+                The <span class="text-yellow-400">Simpsons</span>
+            </h1>
+            <p class="mt-2 text-xl text-yellow-200">The most dysfunctional family on TV.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Homer Simpson Card -->
+            <div class="family-card rounded-xl overflow-hidden shadow-lg">
+                <div class="yellow-accent p-4 text-center">
+                    <h2 class="text-3xl font-bold">Homer J. Simpson</h2>
+                </div>
+                <div class="p-6">
+                    <!-- Placeholder Image (Simpsons Yellow background) -->
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
+                         src="https://placehold.co/400x200/FDE047/1F2937?text=Homer+Simpson"
+                         alt="Homer Simpson Placeholder Image">
+                    <p class="text-gray-700 mb-4">
+                        The safety inspector at the Springfield Nuclear Power Plant. Homer is known for his laziness, love of beer and donuts, and his iconic catchphrase: "D'oh!" Despite his flaws, he loves his family deeply, often in his own destructive way.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">D'oh!</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Donuts</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Nuclear Safety</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marge Simpson Card -->
+            <div class="family-card rounded-xl overflow-hidden shadow-lg">
+                <div class="yellow-accent p-4 text-center">
+                    <h2 class="text-3xl font-bold">Marge Simpson</h2>
+                </div>
+                <div class="p-6">
+                    <!-- Placeholder Image (Simpsons Yellow background) -->
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
+                         src="https://placehold.co/400x200/FDE047/1F2937?text=Marge+Simpson"
+                         alt="Marge Simpson Placeholder Image">
+                    <p class="text-gray-700 mb-4">
+                        The long-suffering, yet incredibly patient, matriarch of the family. Marge is the moral center, constantly trying to maintain order amid the chaos created by her husband and son. Her famous blue beehive is instantly recognizable.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Blue Hair</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Moral Compass</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Patience</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bart Simpson Card -->
+            <div class="family-card rounded-xl overflow-hidden shadow-lg">
+                <div class="yellow-accent p-4 text-center">
+                    <h2 class="text-3xl font-bold">Bart Simpson</h2>
+                </div>
+                <div class="p-6">
+                    <!-- Placeholder Image (Simpsons Yellow background) -->
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
+                         src="https://placehold.co/400x200/FDE047/1F2937?text=Bart+Simpson"
+                         alt="Bart Simpson Placeholder Image">
+                    <p class="text-gray-700 mb-4">
+                        The mischievous ten-year-old troublemaker. Bart is known for his pranks, skateboard, and catchphrases like "Ay Caramba!" and "Eat my shorts." He constantly butts heads with Principal Skinner and his sister, Lisa.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Ay Caramba!</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Skateboarding</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Pranks</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lisa Simpson Card -->
+            <div class="family-card rounded-xl overflow-hidden shadow-lg">
+                <div class="yellow-accent p-4 text-center">
+                    <h2 class="text-3xl font-bold">Lisa Simpson</h2>
+                </div>
+                <div class="p-6">
+                    <!-- Placeholder Image (Simpsons Yellow background) -->
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
+                         src="https://placehold.co/400x200/FDE047/1F2937?text=Lisa+Simpson"
+                         alt="Lisa Simpson Placeholder Image">
+                    <p class="text-gray-700 mb-4">
+                        The intelligent and compassionate eight-year-old prodigy. Lisa is a vegetarian, a Buddhist, and an avid jazz saxophone player. She often serves as the family's conscience, though she frequently feels isolated by her intellect.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Saxophone</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Genius</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Activist</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maggie Simpson Card -->
+            <div class="family-card rounded-xl overflow-hidden shadow-lg">
+                <div class="yellow-accent p-4 text-center">
+                    <h2 class="text-3xl font-bold">Maggie Simpson</h2>
+                </div>
+                <div class="p-6">
+                    <!-- Placeholder Image (Simpsons Yellow background) -->
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 shadow-md"
+                         src="https://placehold.co/400x200/FDE047/1F2937?text=Maggie+Simpson"
+                         alt="Maggie Simpson Placeholder Image">
+                    <p class="text-gray-700 mb-4">
+                        The perpetually silent baby of the family. Maggie communicates mostly through pacifier sucking and occasionally demonstrating incredible feats of intelligence or heroism. She is fiercely protective of her family.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Pacifier</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Silent</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Heroic</span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="header-bg mt-12 py-4 text-center">
+        <p class="text-white text-sm">&copy; 2024 Springfield Fan Site. All rights reserved to Groening/FOX.</p>
+    </footer>
+
+</body>
+</html>
